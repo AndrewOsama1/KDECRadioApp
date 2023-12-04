@@ -1,0 +1,70 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-churchapp-kdec-174359-authRole",
+      "UnauthRoleArn": "arn:aws:iam::173138263283:role/amplify-churchapp-kdec-174359-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::173138263283:role/amplify-churchapp-kdec-174359-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-churchapp-kdec-174359-deployment",
+      "UnauthRoleName": "amplify-churchapp-kdec-174359-unauthRole",
+      "StackName": "amplify-churchapp-kdec-174359",
+      "StackId": "arn:aws:cloudformation:eu-central-1:173138263283:stack/amplify-churchapp-kdec-174359/c795b2a0-0cf9-11ed-8589-0a06620cd9f8",
+      "AmplifyAppId": "d15pf0ppf8jt8q"
+    }
+  },
+  "auth": {
+    "churchapp07b06c7d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-churchapp-kdec-174359-deployment/amplify-cfn-templates/auth/churchapp07b06c7d-cloudformation-template.yml",
+        "logicalId": "authchurchapp07b06c7d"
+      },
+      "lastPushTimeStamp": "2022-07-26T15:50:29.881Z",
+      "output": {
+        "UserPoolId": "eu-central-1_6bglrUtVS",
+        "AppClientIDWeb": "35h9kvfp8uegjt377u7j05nqkp",
+        "AppClientID": "3ek2ep8qkfc21ilgtc11ag7i2v",
+        "IdentityPoolId": "eu-central-1:fe7e3f7f-dc9b-4c20-adda-efd33be43946",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:173138263283:userpool/eu-central-1_6bglrUtVS",
+        "IdentityPoolName": "churchapp07b06c7d_identitypool_07b06c7d__kdec",
+        "UserPoolName": "churchapp07b06c7d_userpool_07b06c7d"
+      },
+      "lastPushDirHash": "9HO7s9NO13iB7XTI1hSNpez7hVI="
+    }
+  },
+  "storage": {
+    "churchapp54eca175": {
+      "service": "S3",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "kdec-radio",
+        "Region": "eu-central-1"
+      },
+      "lastPushTimeStamp": "2022-07-26T15:50:29.891Z"
+    }
+  }
+}

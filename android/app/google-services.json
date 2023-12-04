@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1020212812719",
+    "project_id": "churchapp-3e0d9",
+    "storage_bucket": "churchapp-3e0d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020212812719:android:3967710fc27334a4fd6d5a",
+        "android_client_info": {
+          "package_name": "com.genesiscreations.church_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020212812719-bvk63ir4ge59m4n1cum6oi53sm2ir9oj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV6TwSEzGpvIqx_6PXgtyxhKrOeG9nP94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020212812719-bvk63ir4ge59m4n1cum6oi53sm2ir9oj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1020212812719-5f3ti87t1afkbldj7b25u2fjmv3sgjqo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.genesiscreations.kdecradio"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

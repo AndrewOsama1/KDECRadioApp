@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Radio</title>
+    <link rel="stylesheet" href="//www.radiojar.com/wrappers/api-plugins/v1/css/player.css">
+</head>
+
+<body>
+
+    <div id="rj-player" style="text-align: center;">
+        <div id="rj-cover">
+            <a href="#"><img src="" /></a>
+        </div>
+        <p id="trackInfo" class="rjp-info"></p>
+        <div id="rjp-radiojar-player"></div>
+    </div>
+
+    <script type="text/javascript" src="//www.radiojar.com/wrappers/api-plugins/v1/radiojar-min.js"></script>
+    <script>
+        rjq('#rjp-radiojar-player').radiojar('player', {
+            "streamName": "km83ueburnhvv",
+            "enableUpdates": true,
+            "defaultImage": "https://www.radiojar.com/img/sample_images/Radio_Stations_Avatar_BLUE.png",
+        });
+        rjq('#rjp-radiojar-player').off('rj-track-load-event');
+        rjq('#rjp-radiojar-player').on('rj-track-load-event', function (event, data) {
+            updateInfo(data);
+            if (data.title != "" || data.artist != "") {
+                rjq('.rjp-trackinfo-container').show();
+                rjq('#trackInfo').html(data.artist + ' - "' + data.title + '"')
+            } else {
+                rjq('.rjp-trackinfo-container').hide();
+            }
+        });
+
+        function updateInfo(data) {
+            if (data.thumb) {
+                rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+            } else {
+                rjq('#rj-cover').html('')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

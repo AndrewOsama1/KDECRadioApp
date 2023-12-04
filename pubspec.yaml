@@ -1,0 +1,109 @@
+name: church_app
+version: 1.6.6+2
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: ">=2.18.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  get: 4.6.5
+  firebase_core: ^2.7.1
+  firebase_messaging: ^14.2.6
+  firebase_auth: ^4.2.10
+  cached_network_image: ^3.2.3
+  font_awesome_flutter: ^10.4.0
+  shared_preferences: ^2.2.2
+  flutter_launcher_icons: ^0.13.1
+  amplify_core: ^0.6.12
+  amplify_auth_cognito: ^0.6.12
+  amplify_storage_s3: ^0.6.12
+  amplify_flutter: ^0.6.12
+  url_launcher: ^6.1.10
+  flutter_localizations: # Add this line
+    sdk: flutter
+  dio: ^5.0.1
+  audio_service: ^0.18.9
+  dio_cache_interceptor: ^3.4.0
+  dio_cache_interceptor_file_store: ^1.2.2
+  just_audio: ^0.9.31
+  miniplayer: ^1.0.1
+  audio_video_progress_bar: ^1.0.0
+  webview_flutter: ^4.0.6
+  json_cache: ^1.5.2
+  localstorage: ^4.0.1+2
+  flutter_expandable_fab: ^1.7.0
+  simple_connection_checker: ^0.2.1
+  loading_animation_widget: ^1.2.0+4
+  flutter_svg: ^2.0.7
+
+  http: ^0.13.4
+  firebase_database: ^10.2.6
+  giffy_dialog: ^2.0.0+2
+  flutter_native_splash: ^2.3.3
+  flutter_local_notifications: ^16.1.0
+  cookie_jar: ^4.0.8
+  dio_cookie_manager: ^3.0.1
+  path_provider: ^2.1.1
+  connectivity: ^3.0.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter_native_splash:
+  image: assets/images/kfc.png
+  color: "000000"
+  android: true
+  ios: true
+flutter_icons:
+  android: "launcher_icon"
+
+  image_path: assets/images/kdg.png
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/images/kdga.png"
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/translation/
+
+  fonts:
+    - family: ABEAKRG
+      fonts:
+        - asset: assets/fonts/ABEAKRG.ttf
+    - family: GESSTwo
+      fonts:
+        - asset: assets/fonts/GESSTwoBold.otf
+        - asset: assets/fonts/GESSTwoMedium.otf
+        - asset: assets/fonts/GESSTwoLight.otf
+
+    - family: ArabicSukar
+      fonts:
+        - asset: assets/fonts/Cairo-VariableFont_slnt,wght.ttf

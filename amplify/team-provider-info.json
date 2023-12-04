@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-churchapp-dev-114009-authRole",
+      "UnauthRoleArn": "arn:aws:iam::014001288503:role/amplify-churchapp-dev-114009-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::014001288503:role/amplify-churchapp-dev-114009-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-churchapp-dev-114009-deployment",
+      "UnauthRoleName": "amplify-churchapp-dev-114009-unauthRole",
+      "StackName": "amplify-churchapp-dev-114009",
+      "StackId": "arn:aws:cloudformation:eu-west-1:014001288503:stack/amplify-churchapp-dev-114009/bd0c0a80-2cd2-11ec-aad0-0a2b0db68ccf",
+      "AmplifyAppId": "dxv5zcknahcrn"
+    },
+    "categories": {
+      "auth": {
+        "churchapp07b06c7d": {}
+      }
+    }
+  }
+}
